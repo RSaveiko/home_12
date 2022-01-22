@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style ="width: 320px; margin: 0 auto;">
+<h1>Все кандидаты</h1>
+{% for dict in candidates %}
+<p><a href="/candidate/{{dict.id}}">{{dict.name}}</a></p>
+{% endfor %}
+</body>
+</html>
