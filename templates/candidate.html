@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style ="width: 320px; margin: 0 auto;">
+{% for dict in candidates %}
+{% if id == dict.id %}
+<h1>Имя кандидата: {{dict.name}}</h1>
+<p>Позиция кандидата: {{dict.position}}</p>
+<img src="{{dict.picture}}" width=200/>
+<p>Навыки кандидата: {{dict.skills}}</p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
